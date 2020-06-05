@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript">
+    function clickEvent() {
+        document.getElementById("form1").action = "create/"+ document.getElementById("channel").value;
+    }
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>Channel Subscription</title>
+    <form method="GET" id="form1">
+        Channel Name: <input type="text" name="channel" id="channel"/><br/>
+        Xpath: <input type = "text" name = "xpath" id="xpath"/><br/>
+        <input type="submit" value="Subscribe Channel" onclick="clickEvent()"/>
+    </form>
+</head>
+<body>
+
+</body>
+</html>
